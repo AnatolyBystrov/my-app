@@ -1,4 +1,24 @@
-.Appl {
-font-size: 2em;
-text-align: center;
+.Appl{
+  font-size: 2em;
+}
+.text
+{
+  color : yellow
+}
+
+.firstCouple, .secondCouple
+{
+  display: flex;
+  justify-content: center;
+}
+.firstCountry, .secondCountry, .thirdCountry, .fourCountry
+{
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.body{
+  background-color: bisque;
+  background-size: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
