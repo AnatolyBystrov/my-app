@@ -29,7 +29,7 @@ export const Timer:React.FC<Props>=(props)=>
       
       let [changer,setChanger] = React.useState(stylesH2);
 
-      //HW33
+     
       const StartTimeZoneIndex = timeZones.findIndex(element => JSON.stringify(element).includes(props.cityCountry));
 
       const [timeZone, setTimeZone] = React.useState(timeZones[StartTimeZoneIndex].name);
@@ -50,7 +50,7 @@ export const Timer:React.FC<Props>=(props)=>
         }
         return res;
       }
-      
+
     return <div>  
     <Input submitFn={submit} placeHolder={"enter city or country"} buttonName = "Use new timezone"/>
     <h2 style ={changer}>Current Time in {newtimeZone}</h2>
