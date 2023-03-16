@@ -1,16 +1,15 @@
-import React from "react";
-import {Timer} from "./components/Timer";
+import React from 'react';
+
 import './App.css';
 
-function App()
-{
-  return  <section className='section'><h2 className='firstCouple'>
-    <div className='firstCountry'> <Timer cityCountry="Toronto" /></div>
-    <div className='secondCountry'> <Timer cityCountry="London" /></div></h2>
-    <h2 className='secondeCouple'><div className='thirdCountry'> <Timer cityCountry="Japan" /></div>
-    <div className='fourCountry'><Timer cityCountry="Jerusalem" />
-    </div></h2></section>;
+import {StateMachine} from './components/StateMachine';
+
+function App() {
+  
+  return <div style={{display: 'flex', alignItems: 'center',
+   flexDirection: 'column', marginTop: '15vh'}}>    
+    <StateMachine/>
+  </div>
 }
 
 export default App;
- 
